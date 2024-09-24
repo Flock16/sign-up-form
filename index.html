@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="header-div">
+        <div>
+          <img src="assets/odin-lined.png" alt="" />
+          <h1>ODIN</h1>
+        </div>
+        <p>
+          Photo by
+          <a target="_blank" href="https://unsplash.com/@haliewestphoto">
+            Halie West</a
+          >
+          on
+          <a target="_blank" href="https://unsplash.com/">Unsplash</a>
+        </p>
+      </div>
+      <div class="content-container">
+        <div>
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams.<br />Sign
+            up <em>now</em> to get started.
+          </p>
+          <p>You <em>know</em> you want to.</p>
+        </div>
+        <form action="">
+          <div>
+            <h1>Let's do this!</h1>
+            <div class="form-row">
+              <p>
+                <label for="first_name">FIRST NAME</label>
+                <input
+                  id="first_name"
+                  name="first_name"
+                  type="text"
+                  minlength="2"
+                  max="20"
+                  required
+                />
+                <span></span>
+              </p>
+              <p>
+                <label for="last_name">LAST NAME</label>
+                <input
+                  id="last_name"
+                  name="last_name"
+                  type="text"
+                  minlength="2"
+                  max="30"
+                  required
+                />
+              </p>
+            </div>
+            <div class="form-row">
+              <p>
+                <label for="email_address">EMAIL</label>
+                <input
+                  id="email_address"
+                  name="email_address"
+                  type="email"
+                  required
+                />
+              </p>
+              <p>
+                <label for="phone_number">PHONE NUMBER</label>
+                <input
+                  id="phone_number"
+                  name="phone_number"
+                  type="text"
+                  pattern="^[0-9]*$"
+                  placeholder="0412345678"
+                  required
+                />
+              </p>
+            </div>
+            <div class="form-row">
+              <p>
+                <label for="password">PASSWORD</label>
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  minlength="6"
+                  required
+                />
+                <span></span>
+              </p>
+              <p>
+                <label for="conf_password">CONFIRMED PASSWORD</label>
+                <input
+                  id="conf_password"
+                  name="conf_password"
+                  type="password"
+                  minlength="6"
+                  required
+                />
+              </p>
+            </div>
+          </div>
+          <button type="submit">Create Account</button>
+        </form>
+
+        <p>Already have an account? <a>Log in</a></p>
+      </div>
+    </div>
+  </body>
+</html>

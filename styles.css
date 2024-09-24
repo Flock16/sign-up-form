@@ -1,0 +1,182 @@
+@font-face {
+  font-family: "Norse-bold";
+  src: url("assets/Norse-Bold.otf");
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --header-container-size: 32%;
+  --content-container-size: 68%;
+  --content-x-padding: 50px;
+}
+
+body {
+  height: 100vh;
+  padding: 0px;
+  margin: 0px;
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, Arial,
+    "Helvetica Neue", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+.header-div {
+  position: relative;
+  width: var(--header-container-size);
+  background-image: url(assets/halie-west-25xggax4bSA-unsplash.jpg);
+  background-position: right;
+  background-size: cover;
+}
+
+.header-div > div {
+  position: relative;
+  font-family: "Norse-bold";
+  font-size: 3rem;
+  top: 20%;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 150px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 5px;
+}
+
+.header-div > div > img {
+  height: 80%;
+}
+
+.header-div > p {
+  position: absolute;
+  color: white;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.header-div > p > a:visited {
+  color: white;
+}
+
+.content-container {
+  width: var(--content-container-size);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+
+.content-container > div > p {
+  margin-top: -100px;
+  font-size: 2rem;
+  margin-left: var(--content-x-padding);
+  margin-right: var(--content-x-padding);
+  font-weight: bold;
+}
+
+.content-container > div > p:last-of-type {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.content-container > form > div {
+  padding: 30px var(--content-x-padding);
+
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.content-container > form > div > h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.form-row {
+  display: flex;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.form-row > p > input,
+.form-row > p > label {
+  display: block;
+}
+
+.form-row > p > label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+.form-row > p > input {
+  width: 285px;
+  height: 35px;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+
+.form-row > p > input:focus {
+  outline: 1px solid lightblue;
+  box-shadow: 2px 2px 2px 1px rgb(0 0 0 / 20%);
+}
+
+.form-row > p > input:valid {
+  outline: 1px solid green;
+}
+
+.form-row > p > input:user-invalid {
+  outline: 1px solid red;
+}
+
+#password:invalid + span::before {
+  content: "* Passwords do not match";
+  color: #d55c5f;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+#first_name:user-invalid + span::before {
+  content: "* Provide a valid first name";
+  color: #d55c5f;
+  font-size: 0.8em;
+  margin: 0;
+  padding: 0;
+}
+
+.content-container > form > button {
+  margin-left: var(--content-x-padding);
+  margin-right: var(--content-x-padding);
+  margin-top: 40px;
+
+  background-color: #596d48;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 10px;
+  padding: 15px 60px;
+  border: none;
+}
+
+.content-container > p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-left: var(--content-x-padding);
+  margin-right: var(--content-x-padding);
+}
+
+.content-container > p > a {
+  color: #596d48;
+}
